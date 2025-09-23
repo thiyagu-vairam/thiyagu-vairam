@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kisan Shop Case Study - Thiyagu Vairam</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/common.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="assets/fonts/fonts.css" rel="stylesheet">
+        <!-- Added AOS (Animate On Scroll) library for smooth animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .sticky-top.shadow-sm {
+                position: fixed;
+                width: 100%;
+            }
+            nav#mainNavbar.shadow-sm {
+                background: #fff;
+            }
+            .phone-mockup {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .phone-mockup img {
+                width: 100%;
+                height: auto;
+                border-radius: 25px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+            .benefit-card {
+                background: #FAFAFA;
+                border-radius: 16px;
+                padding: 16px;
+                height: 100%;
+                border: none;
+            }
+            .video-placeholder {
+                background: #e5e7eb;
+                border-radius: 16px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6b7280;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="" style="background: radial-gradient(106.32% 158.95% at -6.32% -4.47%, #CFECFF 0%, #FEE9E3 100%);">
+       <!-- Header -->
+        <!-- Added fade-down animation to navbar -->
+        <nav id="mainNavbar" class="navbar navbar-light py-3 sticky-top" data-aos="fade-down" data-aos-duration="600">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+                <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+                </a>
+
+                <!-- Hamburger -->
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Menu -->
+                 <ul class="d-none d-lg-flex navbar-nav ms-auto flex-row">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle font-16 fw-400 clr-black" href="#" id="caseStudyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Case Studies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="caseStudyDropdown">
+                        <li><a class="dropdown-item active" href="kisan-shop.html">Kisan Shop</a></li>
+                        <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+                        <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+                        <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel"><a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+            <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+            </a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+            <!-- Dropdown inside offcanvas -->
+            <li class="nav-item dropdown me-5">
+
+                <a class="nav-link dropdown-toggle font-16 fw-400 clr-black d-flex align-items-center" 
+                    href="#" 
+                    id="caseStudyDropdown" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                    Case Studies
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="caseStudyDropdownMobile">
+                <li><a class="dropdown-item" href="kisan-shop.html">Kisan Shop</a></li>
+                <li><a class="dropdown-item active" href="agripix.html">AgriPix</a></li>
+                <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+                <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="case-study-hero pb-80 mt-120">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-9">
+                        <!-- Added fade-up animation to hero content -->
+                        <h1 class="font-48 fw-600 clr-black1 mb-2" data-aos="slide-up" data-aos-duration="600">AgriPix: AI-Powered Design Innovation</h1>
+                        <p class="font-20 clr-gray1 fw-400 mb-80" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">An AI Image Generation Tool Saving $2M Annually for  UPL’s Marketing Team</p>
+                        <img src="assets/img/casestudy/agripix/AgriPix-banner.svg" alt="banner img" class="img-fluid" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- About the Project -->
+        <section class="section-spacing abtprt-section mt-120 mb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Added slide-right animation to about section -->
+                        <h2 class="font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">About the Project</h2>
+                        <p class="font-16 clr-gray1 fw-400 lh-base mb-0" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                            AgriPix is transforming visual content creation at UPL by replacing stock images and agency reliance with AI-generated, on-brand visuals in minutes. Designed to cut ~$2M in annual design costs, this generative AI tool empowers marketers to create high-quality assets, seasonal creatives, and promos quickly—boosting savings, adoption, and creative independence across teams.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 mblabt">
+                        <!-- Added slide-left animation to role section -->
+                        <h2 class="font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">My Role</h2>
+                        <p class="font-16 clr-gray1 fw-400 lh-base mb-0" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                            As the sole Product Designer for AgriPix, I led the end-to-end design—from ideation to iterative prototyping—crafting a seamless prompt-based image generation experience. I collaborated closely with stakeholders to align the tool with business needs, optimized workflows, and ensured a smooth rollout. I also created tutorial videos to onboard internal teams effectively. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Objective -->
+        <section class="businessobj-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to business objective title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Business Objective</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Transforming User Behaviour -->
+                                <!-- Added slide-right animation to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/rupee-setting.svg" alt="rupee-setting" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Optimize Marketing Spend</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Lower creative production costs by reducing dependence on external agencies</p>
+                                </div>
+
+                                <!-- Improve Rural Livelihood -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/users.svg" alt="user" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Enhance Efficiency</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Empower teams to deliver more with less—faster, leaner marketing execution.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Delivering to Rural Areas -->
+                                <!-- Added slide-left animation to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/speed.svg" alt="mobile shopping" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Improve Speed-to-Market</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Accelerate campaign launches with AI-generated visuals on demand.</p>
+                                </div>
+
+                                <!-- To Achieve 30L GMV -->
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/increase.svg" alt="mobile shopping" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Maximize Campaign Performance</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Enable rapid creative testing to identify and scale 
+top-performing assets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Challenges Section -->
+        <section class="user-challenges-section mt-120 mb-120 mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to challenges title -->
+                        <h2 class="challenges-title font-24 fw-600 clr-black2 text-center mb-4" data-aos="slide-up" data-aos-duration="600">User Challenges</h2>
+                        <p class="clr-gray1 fw-400 font-16 text-center mb-52" data-aos="slide-up" data-aos-duration="600">Our users are UPL’s internal Marketing Managers,  Business/Sales Leads</p>
+                        <!-- Farmers Challenges -->
+                        <div class="challenge-category border-0">
+                            <div class="row">
+                                <!-- Added fade-up animations to challenge items with staggered delays -->
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Slow Turnaround Times</h4>
+                                        <p class="challenge-description">Agencies juggle multiple clients, causing delays and missed opportunities.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Endless Back-and-Forth</h4>
+                                        <p class="challenge-description">Quality output often demands multiple iterations and 
+meetings.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                        <h4 class="challenge-title">Lack of Creative Control</h4>
+                                        <p class="challenge-description">Marketers often rely on external teams, limiting agility and quick experimentation</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                        <h4 class="challenge-title">Missed Seasonal Deadlines</h4>
+                                        <p class="challenge-description"> Rigid timelines make it hard to capitalize on time-sensitive campaigns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Generative AI? -->
+        <section class="competitive-section mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to competitive edge title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Why Generative AI?</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/Customization.svg" alt="farmer" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Customization & Uniqueness</h4>
+                                    <p class="clr-gray1 fw-400 font-16">The AI model reflects UPL’s brand identity for consistent visuals.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/Cost-Saving.svg" alt="Cost-Saving" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Cost Efficiency </h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Eliminates recurring licensing fees of stock images.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/payment-dashboard/boost.svg" alt="boost" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Empowers Non-Design Teams</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Allows different teams to create professional visuals.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-left animations to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/Scalability.svg" alt="Scalability" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Scalability & Speed </h4>
+                                    <p class="clr-gray1 fw-400 font-16">Generates multiple variations quickly without time-consuming.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/iteration.svg" alt="marketplace" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Flexibility & Iteration</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Allows fine-tuning and style variations based on feedback.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/Vector.svg" alt="Vector" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Avoids Copyright issues</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Produces original content, reducing legal risks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proposed Business Model -->
+        <section class="businessobj-section howsection">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <img src="assets/img/casestudy/agripix/howit.svg" class="img-fluid" alt="howit" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Identified Use Cases -->
+        <section class="businessobj-section mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <!-- Added fade-up animation to business model section -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Identified Use Cases</h2>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="table-container" data-aos="slide-up" data-aos-duration="600">
+                                    <table class="use-case-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Use Case</th>
+                                                <th>Description</th>
+                                                <th>Tech used</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Prompt to Image</td>
+                                                <td>User want to generate creative based on prompt</td>
+                                                <td>Uses <strong>Mid-Journey, Dall-E, Claid.ai</strong> for images</td>
+                                            </tr>
+                                            <tr class="row-alternate">
+                                                <td>Image to Prompt</td>
+                                                <td>User shares reference image to generate creatives</td>
+                                                <td>Uses <strong>ChatGPT</strong> which converts image to text</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Resize / Enhance</td>
+                                                <td>Upscale and Enhance the image appearance</td>
+                                                <td>Uses <strong>Vance.ai</strong> to enhance the images</td>
+                                            </tr>
+                                            <tr class="row-alternate">
+                                                <td>Customize Image</td>
+                                                <td>User wants to edit the image</td>
+                                                <td><strong>Canva</strong> editor to finalise & download</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Image options</td>
+                                                <td>Orientation, Style of the output</td>
+                                                <td>Internal model & <strong>Mid-Journey / Dall-E / Claid.ai</strong></td>
+                                            </tr>
+                                            <tr class="row-alternate">
+                                                <td>Access history</td>
+                                                <td>Accessing the earlier prompts / generated images</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Save as favourites</td>
+                                                <td>Save images for future use</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="row-alternate">
+                                                <td>Support Global Language</td>
+                                                <td>User wants to prompt on regional language</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Placeholder -->
+        <section class="section-spacing mt-120 mb-120 mbl-60 mtl-60 agripix-vdeo">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Added zoom-in animation to video placeholder -->
+                        <div class="video-placeholder position-relative" data-aos="slide-up" data-aos-duration="600">
+                            <video id="kisanVideo" class="w-100" loop playsinline preload="metadata"
+                                    poster="assets/img/casestudy/agripix/agripix-poster.jpeg">
+                                <source src="assets/img/casestudy/agripix/AgriPix.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <!-- Play button overlay -->
+                            <button id="playBtn" class="play-button" aria-label="Play video">
+                                <img src="assets/img/play-button.png" class="img-fluid" alt="play button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="businessobj-section awards-section">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-lg-5">
+                        <div class="award-content">
+                            <h3 class="award-title font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">UPL OpenAg - Innovation Award</h3>
+                            <p class="award-description clr-gray1 fw-400 font-16 mb-0" data-aos="slide-up" data-aos-duration="600">The team won the UPL's OpenAg annual prestigious award for this product</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="award-images">
+                            <div class="award-image-item">
+                                <img src="assets/img/casestudy/agripix/awards.svg" alt="UPL OpenAg Innovation Awards" class="award-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Impact -->
+        <section class="mt-120 mb-120 mbl-60 mtl-60 pt-80 pb-80 businessobj-section metrix-section" style="background: linear-gradient(98.07deg, rgba(207, 236, 255, 0.7) 0.79%, rgba(254, 233, 227, 0.7) 102.63%);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Added fade-up animation to metrics title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">The Impact</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added flip-up animations to metric cards -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/agripix/money.svg" alt="money" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">$80K Saved</h4>
+                                    <p class="clr-gray1 fw-400 font-16 text-center">After 3 months of release</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/agripix/award.svg" alt="award" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">Open Ag - Innovation Award</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0 text-center">Won the prestigious award from UPL</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/agripix/adaption.svg" alt="adaption" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">66% Adoption</h4>
+                                    <p class="clr-gray1 fw-400 font-16 text-center">79 of 120 users satisfied</p>
+                                </div>
+
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/agripix/image-download.svg" alt="scooter" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">100+ Daily Downloads</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0 text-center">Images are being download</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What’s Next? -->
+        <section class="competitive-section mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to competitive edge title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">What’s Next?</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-4">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-0 text-center" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/template.svg" alt="template" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Templates</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Create predefined templates and train them continuously</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-4">
+                                <!-- Added slide-left animations to right column items -->
+                                <div class="mb-0 text-center" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/video-clapper.svg" alt="video-clapper" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Video Creation</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Create advanced marketing videos in a jiffy</p>
+                                </div>
+                            </div>
+                            <!-- Right Column -->
+                            <div class="col-md-4">
+                                <!-- Added slide-left animations to right column items -->
+                                <div class="mb-0 text-center" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/agripix/presentation.svg" alt="presentation" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Presentation Creation</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Leverage the tool to create presentations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to strategic takeaways title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Key Takeaways</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Hands-on with GenAI</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Explored DALL·E, Midjourney, and Vance.AI to bring agri visuals to life—an exciting and insightful experience.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">New Skill Unlocked: Video Creation</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Took on the challenge of making tutorials and pitch videos—a rewarding learning curve.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Brand First, Always</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Late branding led to UI and video rework. Early alignment would’ve saved time and effort.</p>
+                                </div>
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Grow Use, Cut Waste</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Next steps: boost adoption while keeping costs efficient and value-driven. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Team -->
+        <section class="mb-120 businessobj-section mbl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to team section -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">The Team</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="teamcot text-center">
+                                    <h5 class="clr-black1 fw-500 font-20">Thiyagu Vairakkannu</h5>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Lead Product Designer</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="teamcot text-center">
+                                    <h5 class="clr-black1 fw-500 font-20">Devam Jhanwar</h5>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Sr. Product Manager</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="teamcot text-center">
+                                    <h5 class="clr-black1 fw-500 font-20">Sanjana G</h5>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- prev next -->
+        <section class="mb-120 mbl-60 prevnxt-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to navigation links -->
+                        <div class="d-flex justify-content-between align-items-center" data-aos="slide-up" data-aos-duration="600">
+                            <a href="kisan-shop.html" class="nav-prev clr-black1 text-decoration-none font-36">Previous</a>
+                            <a href="prime-membership.html" class="nav-next clr-black1 text-decoration-none font-36 font-400">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (same as your existing footer) -->
+        <footer class="footer-section">
+            <div class="container text-center">
+                <h2 class="footer-title mb-4">Let's Connect</h2>
+                <p class="footer-subtitle mb-2">Hit me up for collaborations or just a friendly hello</p>
+                <a href="mailto:thiyagu.vairakkannu@gmail.com" class="footer-email">thiyagu.vairakkannu@gmail.com</a>
+                <div class="social-links mt-40">
+                    <a href="https://www.linkedin.com/in/thiyaguvairakkannu/" class="social-link me-4"><img src="assets/img/linkedin.svg" class="img-fluid" alt="linkedin"/></a>
+                    <a href="https://www.instagram.com/pudhupuyal/" class="social-link me-4"><img src="assets/img/instagram.svg" class="img-fluid" alt="instagram"/></a>
+                    <a href="https://x.com/pudhupuyal" class="social-link"><img src="assets/img/twitter.svg" class="img-fluid" alt="twitter"/></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Back to Top Button -->
+        <button id="backToTop" title="Go to top"><span style="vertical-align: text-bottom;"><i class="fa fa-angle-up" aria-hidden="true"></i></span></button>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <!-- Added AOS JavaScript library for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Added custom animation initialization script -->
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover animations to case study buttons
+        document.querySelectorAll('.case-study-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add floating animation to hero icon
+        const heroIcon = document.querySelector('.hero-icon img');
+        if (heroIcon) {
+            setInterval(() => {
+                heroIcon.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    heroIcon.style.transform = 'translateY(0)';
+                }, 1000);
+            }, 2000);
+            heroIcon.style.transition = 'transform 1s ease-in-out';
+        }
+    </script>
+    <script>
+    // Get the button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show button after scrolling down 100px
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+    </body>
+</html>

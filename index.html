@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Added Owl Carousel 2 CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+    <!-- Added AOS (Animate On Scroll) library for smooth animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+<!-- Header -->
+<nav id="mainNavbar" class="navbar navbar-light bg-white py-3 sticky-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo -->
+    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+      <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+      <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+    </a>
+
+    <!-- Hamburger -->
+    <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <ul class="d-none d-lg-flex navbar-nav ms-auto flex-row">
+      <!-- Dropdown -->
+      <li class="nav-item dropdown me-5">
+        <a class="nav-link dropdown-toggle font-16 fw-400 clr-black" href="#" id="caseStudyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Case Studies
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="caseStudyDropdown">
+          <li><a class="dropdown-item" href="kisan-shop.html">Kisan Shop</a></li>
+          <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+          <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+          <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item me-5">
+        <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Offcanvas Sidebar -->
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+        <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+      </a>
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <!-- Dropdown inside offcanvas -->
+      <li class="nav-item dropdown me-5">
+
+        <a class="nav-link dropdown-toggle font-16 fw-400 clr-black d-flex align-items-center" 
+            href="#" 
+            id="caseStudyDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false">
+            Case Studies
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="caseStudyDropdownMobile">
+          <li><a class="dropdown-item" href="kisan-shop.html">Kisan Shop</a></li>
+          <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+          <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+          <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-5 mt-4 mb-95">
+        <div class="container text-center">
+            <!-- Added fade-up animation to hero icon -->
+            <div class="hero-icon mb-40" data-aos="fade-up" data-aos-duration="800">
+                <img src="assets/img/banner-img.svg" class="img-fluid" alt="banner img"/>
+            </div>
+            <!-- Added fade-up animation to hero title with delay -->
+            <h1 class="hero-title mb-24 font-56 clr-black2 fw-700" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">Designing the Future of<br>Digital Experiences.</h1>
+            <!-- Added fade-up animation to hero subtitle with delay -->
+            <p class="hero-subtitle mb-40 font-20 clr-black3 clr-black3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">From concept to scale, I craft human-centered products that power<br>the future of SaaS, AgriTech, LegalTech, and beyond.</p>
+            <!-- Added fade-up animation to contact info with delay -->
+            <div class="contact-info" data-aos="fade-up" data-aos-duration="400" data-aos-delay="600">
+                <a href="mailto:thiyagu.vairakkannu@gmail.com" class="contact-link me-2 font-16 fw-500 clr-blue">thiyagu.vairakkannu@gmail.com</a><span class="align-text-bottom">.</span>
+                <a href="tel:+91 90035 93644" class="text-decoration-none"><span class="contact-link font-16 fw-500 clr-blue">+91 90035 93644</span></a>
+            </div>
+        </div>
+    </section>
+
+<!-- Company Logos -->
+    <!-- Added fade-up animation to company logos section -->
+    <section class="mb-95 cmplogo-section" data-aos="fade-up" data-aos-duration="400">
+        <div class="container slider">
+            <div class="slider-items">
+                <img src="assets/img/nurture-logo.svg" alt="nurture.farm" class="company-logo">
+                <img src="assets/img/degree.svg" alt="66degrees" class="company-logo">
+                <img src="assets/img/activeai.svg" alt="ACTIVE.AI" class="company-logo">
+                <img src="assets/img/zolvit.svg" alt="zolvit" class="company-logo">
+                <img src="assets/img/prospr.svg" alt="prospr" class="company-logo">
+                <img src="assets/img/spin-cycle.svg" alt="SPIN CYCLES" class="company-logo">
+
+                <img src="assets/img/nurture-logo.svg" alt="nurture.farm" class="company-logo">
+                <img src="assets/img/degree.svg" alt="66degrees" class="company-logo">
+                <img src="assets/img/activeai.svg" alt="ACTIVE.AI" class="company-logo">
+                <img src="assets/img/zolvit.svg" alt="zolvit" class="company-logo">
+                <img src="assets/img/prospr.svg" alt="prospr" class="company-logo">
+                <img src="assets/img/spin-cycle.svg" alt="SPIN CYCLES" class="company-logo">
+
+                <img src="assets/img/nurture-logo.svg" alt="nurture.farm" class="company-logo">
+                <img src="assets/img/degree.svg" alt="66degrees" class="company-logo">
+                <img src="assets/img/activeai.svg" alt="ACTIVE.AI" class="company-logo">
+                <img src="assets/img/zolvit.svg" alt="zolvit" class="company-logo">
+                <img src="assets/img/prospr.svg" alt="prospr" class="company-logo">
+                <img src="assets/img/spin-cycle.svg" alt="SPIN CYCLES" class="company-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies pb-5" id="works">
+        <div class="container">
+            <!-- Kisan Shop -->
+            <div class="case-study-card kisan-shop mb-5 col-md-10 m-auto" data-aos="fade-up" data-aos-duration="400">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-6 d-flex flex-column justify-content-start">
+                        <div class="case-content">
+                            <h3 class="case-title">Kisan Shop</h3>
+                            <p class="case-description">A pilot initiative to revolutionize Agri-Input trade for Indian farmers & retailers</p>
+                            <div class="case-stats d-flex gap-5 mb-40">
+                                <div class="stat-item">
+                                    <div class="stat-number">34L</div>
+                                    <div class="stat-label">GMV Achieved</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">1.8K</div>
+                                    <div class="stat-label">Avg. Order Value</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">&lt;22Hrs</div>
+                                    <div class="stat-label">Delivery Time</div>
+                                </div>
+                            </div>
+                            <button class="btn case-study-btn" onclick="location.href='kisan-shop.html'">Read Case Study</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-end">
+                        <div class="case-mockup w-100 text-center">
+                            <img src="assets/img/kisan-shop.svg" alt="Kisan Shop Mobile App" class="mockup-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+             <!-- AgriPix -->
+            <div class="case-study-card agripix mb-5 col-md-10 m-auto" data-aos="fade-up" data-aos-duration="400">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="case-content">
+                            <h3 class="case-title">AgriPix</h3>
+                            <p class="case-description">An AI Image Generation Tool Saving $2M Annually for UPL's Marketing Team</p>
+                            <div class="case-stats d-flex gap-5 mb-40">
+                                <div class="stat-item">
+                                    <div class="stat-number">$80K</div>
+                                    <div class="stat-label">Saved in 3 months</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">60%</div>
+                                    <div class="stat-label">Adoption Rate</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">100+</div>
+                                    <div class="stat-label">Daily Downloads</div>
+                                </div>
+                            </div>
+                            <button class="btn case-study-btn" onclick="location.href='agripix.html'">Read Case Study</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="case-mockup">
+                            <img src="assets/img/agripix.svg" alt="AgriPix Desktop App" class="mockup-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Prime Membership -->
+            <div class="case-study-card kisan-shop mb-5 col-md-10 m-auto" data-aos="fade-up" data-aos-duration="400">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-6 d-flex flex-column justify-content-start">
+                        <div class="case-content">
+                            <h3 class="case-title">Prime Membership</h3>
+                            <p class="case-description">Driving GMV and User engagement with nurture.retail Prime Membership</p>
+                            <div class="case-stats d-flex gap-5 mb-40">
+                                <div class="stat-item">
+                                    <div class="stat-number">7361</div>
+                                    <div class="stat-label">Unique Purchases</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">67.53Cr</div>
+                                    <div class="stat-label">GMV Contribution</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">27%</div>
+                                    <div class="stat-label">User Retention</div>
+                                </div>
+                            </div>
+                            <button class="btn case-study-btn" onclick="location.href='prime-membership.html'">Read Case Study</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-end">
+                        <div class="case-mockup w-100 text-center">
+                            <img src="assets/img/prime-membership.svg" alt="Prime Membership Mobile App" class="mockup-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payout Dashboard -->
+            <div class="case-study-card payout-dashboard col-md-10 m-auto" data-aos="fade-up" data-aos-duration="400">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="case-content">
+                            <h3 class="case-title">Payout Dashboard</h3>
+                            <p class="case-description">Replacing Excel with a payment dashboard to drive trust and transparency</p>
+                            <div class="case-stats d-flex gap-5 mb-40">
+                                <div class="stat-item">
+                                    <div class="stat-number">80%</div>
+                                    <div class="stat-label">Time Reduced</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5X</div>
+                                    <div class="stat-label">More Efficient</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">95%</div>
+                                    <div class="stat-label">Accuracy Achieved</div>
+                                </div>
+                            </div>
+                            <button class="btn case-study-btn" onclick="location.href='payment-dashboard.html'">Read Case Study</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="case-mockup">
+                            <img src="assets/img/payout-dashboard.svg" alt="Payout Dashboard" class="mockup-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" data-aos="fade-up" data-aos-duration="400">
+        <div class="container text-center">
+            <h2 class="footer-title mb-4">Let's Connect</h2>
+            <p class="footer-subtitle mb-2">Hit me up for collaborations or just a friendly hello</p>
+            <a href="mailto:thiyagu.vairakkannu@gmail.com" class="footer-email">thiyagu.vairakkannu@gmail.com</a>
+            <div class="social-links mt-40">
+                <a href="https://www.linkedin.com/in/thiyaguvairakkannu/" class="social-link me-4"><img src="assets/img/linkedin.svg" class="img-fluid" alt="linkedin"/></a>
+                <a href="https://www.instagram.com/pudhupuyal/" class="social-link me-4"><img src="assets/img/instagram.svg" class="img-fluid" alt="instagram"/></a>
+                <a href="https://x.com/pudhupuyal" class="social-link"><img src="assets/img/twitter.svg" class="img-fluid" alt="twitter"/></a>
+            </div>
+        </div>
+    </footer>
+<!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top"><span style="vertical-align: text-bottom;"><i class="fa fa-angle-up" aria-hidden="true"></i></span></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Added jQuery and Owl Carousel 2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <!-- Added AOS JavaScript library for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Added custom animation initialization script -->
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover animations to case study buttons
+        document.querySelectorAll('.case-study-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add floating animation to hero icon
+        const heroIcon = document.querySelector('.hero-icon img');
+        if (heroIcon) {
+            setInterval(() => {
+                heroIcon.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    heroIcon.style.transform = 'translateY(0)';
+                }, 1000);
+            }, 2000);
+            heroIcon.style.transition = 'transform 1s ease-in-out';
+        }
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
+  <script>
+    // Get the button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show button after scrolling down 100px
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+</html>

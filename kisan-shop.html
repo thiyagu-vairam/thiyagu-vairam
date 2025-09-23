@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kisan Shop Case Study - Thiyagu Vairam</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/common.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="assets/fonts/fonts.css" rel="stylesheet">
+        <!-- Added AOS (Animate On Scroll) library for smooth animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .sticky-top.shadow-sm {
+                position: fixed;
+                width: 100%;
+            }
+            nav#mainNavbar.shadow-sm {
+                background: #fff;
+            }
+            .phone-mockup {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .phone-mockup img {
+                width: 100%;
+                height: auto;
+                border-radius: 25px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+            .benefit-card {
+                background: #FAFAFA;
+                border-radius: 16px;
+                padding: 16px;
+                height: 100%;
+                border: none;
+            }
+            .video-placeholder {
+                background: #e5e7eb;
+                border-radius: 16px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6b7280;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="" style="background: linear-gradient(234.67deg, #E7ECFF -2%, #FEE9E3 98.79%);">
+       <!-- Header -->
+        <!-- Added fade-down animation to navbar -->
+        <nav id="mainNavbar" class="navbar navbar-light py-3 sticky-top" data-aos="fade-down" data-aos-duration="800">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+                <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+                </a>
+
+                <!-- Hamburger -->
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Menu -->
+                 <ul class="d-none d-lg-flex navbar-nav ms-auto flex-row">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle font-16 fw-400 clr-black" href="#" id="caseStudyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Case Studies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="caseStudyDropdown">
+                        <li><a class="dropdown-item active" href="kisan-shop.html">Kisan Shop</a></li>
+                        <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+                        <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+                        <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel"><a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+            <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+            </a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+            <!-- Dropdown inside offcanvas -->
+            <li class="nav-item dropdown me-5">
+
+                <a class="nav-link dropdown-toggle font-16 fw-400 clr-black d-flex align-items-center" 
+                    href="#" 
+                    id="caseStudyDropdown" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                    Case Studies
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="caseStudyDropdownMobile">
+                <li><a class="dropdown-item active" href="kisan-shop.html">Kisan Shop</a></li>
+                <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+                <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+                <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="case-study-hero pb-80 mt-120">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <!-- Added fade-up animation to hero content -->
+                        <h1 class="font-48 fw-600 clr-black1 mb-2" data-aos="slide-up" data-aos-duration="600">Kisan Shop: A Pilot Initiative</h1>
+                        <p class="font-20 clr-gray1 fw-400 mb-80" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">Revolutionising  Agri-Input Trade for Indian Farmers & Retailers</p>
+                        <img src="assets/img/casestudy/kisanshop/banner-img.svg" alt="banner img" class="img-fluid" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- About the Project -->
+        <section class="section-spacing abtprt-section mt-120 mb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Added slide-right animation to about section -->
+                        <h2 class="font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">About the Project</h2>
+                        <p class="font-16 clr-gray1 fw-400 lh-base mb-0" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                            Nurture.farm operates across three major verticals—.farm, catering to farmers; .retail, serving agri-input retailers; and .partner, enabling rural gig workers to find jobs. To bridge these platforms and create a seamless agricultural commerce ecosystem, we piloted 'Kisan Shop', an integrated solution that connects farmers, retailers, and delivery partners in a single workflow.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 mblabt">
+                        <!-- Added slide-left animation to role section -->
+                        <h2 class="font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">My Role</h2>
+                        <p class="font-16 clr-gray1 fw-400 lh-base mb-0" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                            I led the product design for 'Kisan Shop' also contributed to the retailer store creation journey, ensuring that the design effectively translated both business objectives and user needs. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Objective -->
+        <section class="businessobj-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to business objective title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Business Objective</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Transforming User Behaviour -->
+                                <!-- Added slide-right animation to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/mobile-shopping.svg" alt="mobile shopping" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Transforming User Behaviour</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Disrupt the retailers' selling & farmers' buying behaviour.</p>
+                                </div>
+
+                                <!-- Improve Rural Livelihood -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/rural.svg" alt="mobile shopping" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Improve Rural Livelihood</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Build more opportunities of the rural gig workers</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Delivering to Rural Areas -->
+                                <!-- Added slide-left animation to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/delivery.svg" alt="mobile shopping" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Delivering to Rural Areas</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Establish the last mile delivery to the deep most rural villages</p>
+                                </div>
+
+                                <!-- To Achieve 30L GMV -->
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/money.svg" alt="mobile shopping" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">To Achieve 30L GMV</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">4 States, 40 order per day, platform & delivery fees</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Benefits -->
+        <section class="user-benefits-section mt-120 mb-120 mbl-60 mtl-60">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-6">
+                        <!-- Added slide-right animation to benefits content -->
+                        <div class="benefits-content h-100" data-aos="slide-up" data-aos-duration="600">
+                            <h2 class="benefits-title font-24 fw-600 clr-black2">User Benefits</h2>
+                            <p class="benefits-subtitle clr-gray1 fw-400 font-16 mb-40">While common in e-commerce, we ran a quick interest check to ensure it was worth our effort before fully investing.</p>
+                            
+                            <div class="benefits-cards">
+                                <!-- Added fade-up animations to benefit cards with delays -->
+                                <div class="benefit-card active" data-gif="farmers" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <h4 class="card-title font-20 fw-500 clr-black1 mb-2">Farmers</h4>
+                                    <p class="card-description clr-gray1 fw-400 font-16 mb-0">Farmers can order agri-inputs from home, explore more products, compare prices, and enjoy faster, reliable delivery without store visits.</p>
+                                </div>
+                                
+                                <div class="benefit-card" data-gif="retailers" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="card-title font-20 fw-500 clr-black1 mb-2">Retailers</h4>
+                                    <p class="card-description clr-gray1 fw-400 font-16 mb-0">Beyond local footfall, retailers can expand their reach to a larger farmer base, boosting sales and revenue with seamless payment settlements.</p>
+                                </div>
+                                
+                                <div class="benefit-card" data-gif="partners" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="card-title font-20 fw-500 clr-black1 mb-2">Partners</h4>
+                                    <p class="card-description clr-gray1 fw-400 font-16 mb-0">More gig job opportunities are created, improving earning potential while offering flexible schedules where partners can choose deliveries that suit their availability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <!-- Added slide-left animation to gif container -->
+                        <div class="gif-container h-100" data-aos="slide-up" data-aos-duration="600">
+                            <div class="gif-placeholder kisan-gif" id="farmers">
+                                <img src="assets/img/casestudy/kisanshop/farmer.gif" alt="farmer" class="img-fluid w-100 h-100 object-fit-contain">
+                            </div>
+                            <div class="gif-placeholder kisan-gif" id="retailers">
+                                <img src="assets/img/casestudy/kisanshop/retailer.gif" alt="Retailers" class="img-fluid w-100 h-100 object-fit-contain">
+                            </div>
+                            <div class="gif-placeholder kisan-gif" id="partners">
+                                <img src="assets/img/casestudy/kisanshop/partner.gif" alt="Partners" class="img-fluid w-100 h-100 object-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Challenges Section -->
+        <section class="user-challenges-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to challenges title -->
+                        <h2 class="challenges-title font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">User Challenges (Discovered via Field Trips)</h2>
+                        
+                        <!-- Farmers Challenges -->
+                        <div class="challenge-category">
+                            <!-- Added slide-right animation to category title -->
+                            <h3 class="category-title" data-aos="slide-up" data-aos-duration="600">Farmers</h3>
+                            <div class="row">
+                                <!-- Added fade-up animations to challenge items with staggered delays -->
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Price-Driven Decisions</h4>
+                                        <p class="challenge-description">Farmers are highly sensitive to price and actively seek discounts.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Trust & Authenticity Concerns</h4>
+                                        <p class="challenge-description">Fear of fake products and fraud creates hesitation.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                        <h4 class="challenge-title">Varying Digital Confidence</h4>
+                                        <p class="challenge-description">Comfort levels with mobile apps differ based on age and exposure.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                        <h4 class="challenge-title">Need for Flexible Financing</h4>
+                                        <p class="challenge-description">A strong interest in credit lines like BNPL & Govt. Subsidies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Retailers Challenges -->
+                        <div class="challenge-category">
+                            <h3 class="category-title" data-aos="slide-up" data-aos-duration="600">Retailers</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Hesitancy Toward Going Online</h4>
+                                        <p class="challenge-description">Cautious on selling online because fear of pricing exposure.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Inventory & Catalog Complexity</h4>
+                                        <p class="challenge-description">Managing product listings and orders smoothly is a major need.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                        <h4 class="challenge-title">Digital Adoption Barriers</h4>
+                                        <p class="challenge-description">Traditional retailers show resistance to tech, needing simpler tools.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                        <h4 class="challenge-title">Customer Support Gaps</h4>
+                                        <p class="challenge-description">Handling buyer queries and complaints - concern for scaling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Delivery Partners Challenges -->
+                        <div class="challenge-category">
+                            <h3 class="category-title" data-aos="slide-up" data-aos-duration="600">Delivery Partners</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Pressure from Rural Deliveries</h4>
+                                        <p class="challenge-description">Delivering to remote locations affects time, fuel, and efficiency—especially during peak seasons.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Income Stability is Key</h4>
+                                        <p class="challenge-description">Many seek more consistent delivery tasks to secure a reliable, daily income stream.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                        <h4 class="challenge-title">Flexibility Matters</h4>
+                                        <p class="challenge-description">They prefer work models that allow juggling other jobs or responsibilities.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                        <h4 class="challenge-title">Support & Training</h4>
+                                        <p class="challenge-description">Operational clarity and training can reduce errors and improve performance in the field.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our competitive edge -->
+        <section class="competitive-section mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to competitive edge title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Our competitive edge</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/farmer.svg" alt="farmer" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">nurture.farm</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Onboarded 1.2Mn farmers with a 400K MAU.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/delivery-bike.svg" alt="delivery-bike" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">nurture.partner</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Over 6,000 partners already onboarded</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-left animations to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/building.svg" alt="building" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">nurture.retail</h4>
+                                    <p class="clr-gray1 fw-400 font-16">1.7L transacting retailers on the marketplace platform.</p>
+                                </div>
+
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/kisanshop/marketplace.svg" alt="marketplace" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Marketplace Platform</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">A complete marketplace ecosystem with every functionality built in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proposed Business Model -->
+        <section class=" businessobj-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Added fade-up animation to business model section -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Proposed Business Model</h2>
+                        <div class="row">
+                            <img src="assets/img/casestudy/kisanshop/business-modal.svg" class="img-fluid" alt="business modal" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Placeholder -->
+        <section class="section-spacing mt-120 mb-120 mbl-60 mtl-60 kisan-vdeo">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Added zoom-in animation to video placeholder -->
+                        <div class="video-placeholder position-relative" data-aos="slide-up" data-aos-duration="600">
+                            <video id="kisanVideo" class="w-100" loop playsinline preload="metadata"
+                                    poster="assets/img/casestudy/kisanshop/kisanshop-poster.jpeg">
+                                <source src="assets/img/casestudy/kisanshop/KisanShop.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <!-- Play button overlay -->
+                            <button id="playBtn" class="play-button" aria-label="Play video">
+                                <img src="assets/img/play-button.png" class="img-fluid" alt="play button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GTM Strategy -->
+        <section class="mb-120 businessobj-section mbl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to GTM strategy title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">GTM Strategy</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Geography</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Top 4 States with the Highest GMV ContributionPunjab, Haryana, UP & Rajasthan (2 villages from each state)</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Farmers</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">20% rollout to farmers actively engaged in the season</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-left animations to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Retailers</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Retailers with an Average Order Value of ₹1L/Month and No Payment Backlog (20 per state x 4 =80)</p>
+                                </div>
+
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Delivery Partners</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Each state is assigned with 5 Krishi Mitras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics (90days Post Launch) -->
+        <section class="pt-80 pb-80 businessobj-section metrix-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Added fade-up animation to metrics title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Metrics (90days Post Launch)</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added flip-up animations to metric cards -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/kisanshop/money.svg" alt="money" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">₹34L GMV Achieved</h4>
+                                    <p class="clr-gray1 fw-400 font-16 text-center">Consistently crossing ₹10L/month</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/kisanshop/products.svg" alt="products" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">21 Orders Daily</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0 text-center">Driven by .farm app adoption</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/kisanshop/cost.svg" alt="cost" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">₹1,800 Avg. Order Value</h4>
+                                    <p class="clr-gray1 fw-400 font-16 text-center">Target: ₹2,500 – Almost there!</p>
+                                </div>
+
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/kisanshop/scooter.svg" alt="scooter" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">250 Avg. Daily Earnings</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0 text-center">Per active delivery partner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Takeaways -->
+        <section class="mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to strategic takeaways title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Strategic Takeaways</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Farmers want convenience</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Quick delivery, easy discovery, flexible payments, and return options were top needs — speed and simplicity drive engagement.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Delivery partners seek clarity & control</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Accurate locations and instant earnings are essential — especially when handling bulky orders.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Retailers need smarter tools</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Simpler onboarding, better leads, inventory help, and payment automation can reduce friction and boost confidence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Team -->
+        <section class="mb-120 businessobj-section mbl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to team section -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">The Team</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="team-content text-center" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <p class="clr-black1 fw4500 font-20 mb-0">It took a village (and then some!)—too many amazing folks to name here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- prev next -->
+        <section class="mb-120 mbl-60 prevnxt-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to navigation links -->
+                        <div class="d-flex justify-content-between align-items-center" data-aos="slide-up" data-aos-duration="600">
+                            <a href="payment-dashboard.html" class="nav-prev clr-gray2 text-decoration-none font-36">Previous</a>
+                            <a href="agripix.html" class="nav-next clr-black1 text-decoration-none font-36 font-400">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (same as your existing footer) -->
+        <footer class="footer-section">
+            <div class="container text-center">
+                <h2 class="footer-title mb-4">Let's Connect</h2>
+                <p class="footer-subtitle mb-2">Hit me up for collaborations or just a friendly hello</p>
+                <a href="mailto:thiyagu.vairakkannu@gmail.com" class="footer-email">thiyagu.vairakkannu@gmail.com</a>
+                <div class="social-links mt-40">
+                    <a href="https://www.linkedin.com/in/thiyaguvairakkannu/" class="social-link me-4"><img src="assets/img/linkedin.svg" class="img-fluid" alt="linkedin"/></a>
+                    <a href="https://www.instagram.com/pudhupuyal/" class="social-link me-4"><img src="assets/img/instagram.svg" class="img-fluid" alt="instagram"/></a>
+                    <a href="https://x.com/pudhupuyal" class="social-link"><img src="assets/img/twitter.svg" class="img-fluid" alt="twitter"/></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Back to Top Button -->
+        <button id="backToTop" title="Go to top"><span style="vertical-align: text-bottom;"><i class="fa fa-angle-up" aria-hidden="true"></i></span></button>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <!-- Added AOS JavaScript library for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Added custom animation initialization script -->
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover animations to case study buttons
+        document.querySelectorAll('.case-study-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add floating animation to hero icon
+        const heroIcon = document.querySelector('.hero-icon img');
+        if (heroIcon) {
+            setInterval(() => {
+                heroIcon.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    heroIcon.style.transform = 'translateY(0)';
+                }, 1000);
+            }, 2000);
+            heroIcon.style.transition = 'transform 1s ease-in-out';
+        }
+    </script>
+<script>
+    // Get the button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show button after scrolling down 100px
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+    </body>
+</html>

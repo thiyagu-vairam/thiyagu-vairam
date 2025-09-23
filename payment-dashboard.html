@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kisan Shop Case Study - Thiyagu Vairam</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/common.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="assets/fonts/fonts.css" rel="stylesheet">
+        <!-- Added AOS (Animate On Scroll) library for smooth animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .sticky-top.shadow-sm {
+                position: fixed;
+                width: 100%;
+            }
+            nav#mainNavbar.shadow-sm {
+                background: #fff;
+            }
+            .phone-mockup {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .phone-mockup img {
+                width: 100%;
+                height: auto;
+                border-radius: 25px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+            .benefit-card {
+                background: #FAFAFA;
+                border-radius: 16px;
+                padding: 16px;
+                height: 100%;
+                border: none;
+            }
+            .video-placeholder {
+                background: #e5e7eb;
+                border-radius: 16px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6b7280;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="" style="background: radial-gradient(107.92% 161.88% at -7.92% -9.13%, #FEE9E3 0%, #CFECFF 100%);">
+       <!-- Header -->
+        <!-- Added fade-down animation to navbar -->
+        <nav id="mainNavbar" class="navbar navbar-light py-3 sticky-top" data-aos="fade-down" data-aos-duration="600">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+                <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+                </a>
+
+                <!-- Hamburger -->
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Menu -->
+                 <ul class="d-none d-lg-flex navbar-nav ms-auto flex-row">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle font-16 fw-400 clr-black" href="#" id="caseStudyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Case Studies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="caseStudyDropdown">
+                        <li><a class="dropdown-item active" href="kisan-shop.html">Kisan Shop</a></li>
+                        <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+                        <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+                        <li><a class="dropdown-item" href="payment-dashboard.html">Payout Dashboard</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel"><a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/logo.svg" alt="Thiyagu Vairam" class="rounded-circle me-2" width="40" height="40">
+            <span class="font-20 clr-black2 fw-600">Thiyagu Vairam</span>
+            </a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+            <!-- Dropdown inside offcanvas -->
+            <li class="nav-item dropdown me-5">
+
+                <a class="nav-link dropdown-toggle font-16 fw-400 clr-black d-flex align-items-center" 
+                    href="#" 
+                    id="caseStudyDropdown" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                    Case Studies
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="caseStudyDropdownMobile">
+                <li><a class="dropdown-item" href="kisan-shop.html">Kisan Shop</a></li>
+                <li><a class="dropdown-item" href="agripix.html">AgriPix</a></li>
+                <li><a class="dropdown-item" href="prime-membership.html">Prime Membership</a></li>
+                <li><a class="dropdown-item active" href="payment-dashboard.html">Payout Dashboard</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link font-16 fw-400 clr-black" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-16 fw-400 clr-black" href="assets/img/resume/Thiyagu_Vairakkannu_Resume.pdf" download="Thiyagu_Vairakkannu_Resume.pdf">Resume</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="case-study-hero pb-80 mt-120">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <!-- Added fade-up animation to hero content -->
+                        <h1 class="font-48 fw-600 clr-black1 mb-2" data-aos="slide-up" data-aos-duration="600">Payout Dashboard</h1>
+                        <p class="font-20 clr-gray1 fw-400 mb-80" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">Replacing Excel with a payment dashboard to drive trust and transparency</p>
+                        <img src="assets/img/casestudy/payment-dashboard/hero-image.svg" alt="banner img" class="img-fluid" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- About the Project -->
+        <section class="section-spacing abtprt-section mt-120 mb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Added slide-right animation to about section -->
+                        <h2 class="font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">About the Project</h2>
+                        <p class="font-16 clr-gray1 fw-400 lh-base mb-0" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                            Seller First by nurture.farm is a platform built to streamline operations for agri-input sellers across India. With ~1,500 registered sellers, including manufacturers and wholesalers, the platform supports a wide network across the country. This project focused on automating monthly payout reports, which were previously shared via Google Sheets—taking 8–10 days for reconciliation.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 mblabt">
+                        <!-- Added slide-left animation to role section -->
+                        <h2 class="font-24 fw-600 clr-black2 mb-3" data-aos="slide-up" data-aos-duration="600">My Role</h2>
+                        <p class="font-16 clr-gray1 fw-400 lh-base mb-0" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                            I led the end-to-end design of the Seller Payout Automation initiative — starting with field research and conversations with our care team to uncover pain points. I designed the core flows, ran usability tests, and collaborated closely with PMs and business stakeholders to ensure alignment and impact. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Objective -->
+        <section class="businessobj-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to business objective title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Business Objective</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Transforming User Behaviour -->
+                                <!-- Added slide-right animation to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/payment-dashboard/rupee-setting.png" alt="rupee-setting" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Automate Reconciliation</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Reduce manual effort and save time with real-time payout visibility.</p>
+                                </div>
+
+                                <!-- Improve Rural Livelihood -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/payment-dashboard/boost.svg" alt="boost" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Boost Platform Engagement</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0"> Increase seller stickiness, driving higher GMV.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Delivering to Rural Areas -->
+                                <!-- Added slide-left animation to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/payment-dashboard/seller.svg" alt="seller" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Improve Seller Experience</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Lower payment-related complaints and confusion.</p>
+                                </div>
+
+                                <!-- To Achieve 30L GMV -->
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div>
+                                            <img src="assets/img/casestudy/payment-dashboard/opacity.svg" alt="opacity" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20">Build Trust & Transparency</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0"> Strengthen seller confidence through clear, accurate reports.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges -->
+        <section class="user-challenges-section mt-120 mb-120 mbl-60 mtl-60 paymentda-page">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to challenges title -->
+                        <h2 class="challenges-title font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Challenges</h2>
+                        <!-- Row with 2 equal columns -->
+                        <div class="row">
+                            <!-- Business Challenges -->
+                            <div class="col-md-6">
+                                <div class="challenge-category pr-100 mpr-0">
+                                    <!-- Added slide-right animation to category title -->
+                                    <h3 class="category-title" data-aos="slide-up" data-aos-duration="600">Business Challenges</h3>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Delayed Reconciliation</h4>
+                                        <p class="challenge-description">Monthly reports take 8–10 days to prepare, slowing down financial visibility.</p>
+                                    </div>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">No Platform Visibility</h4>
+                                        <p class="challenge-description">Sellers can’t track payouts directly on SellerFirst—only through emailed sheets.</p>
+                                    </div>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Manual & Resource-Heavy</h4>
+                                        <p class="challenge-description">Internal teams spend significant time generating and sharing Excel reports.</p>
+                                    </div>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Confusing Report Format</h4>
+                                        <p class="challenge-description">Dense Excel files with too many fields make it hard for sellers to decode payment info.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <!-- Seller Challenges -->
+                            <div class="col-md-6">
+                                <div class="challenge-category">
+                                    <h3 class="category-title" data-aos="slide-up" data-aos-duration="600">Seller Challenges</h3>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                        <h4 class="challenge-title">Cumbersome Excel Reports</h4>
+                                        <p class="challenge-description">Sellers found the monthly payout sheets cluttered, with too many fields and transactions, making them hard to read.</p>
+                                    </div>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Lack of Order-Payment Mapping</h4>
+                                        <p class="challenge-description">Payments weren’t easily traceable to delivered orders, leading to confusion and follow-ups.</p>
+                                    </div>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Poor Reconciliation Experience</h4>
+                                        <p class="challenge-description">Comparing payouts across months was manual and error-prone, slowing down internal tracking.</p>
+                                    </div>
+                                    <div class="challenge-item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                        <h4 class="challenge-title">Difficult to Share with Accountants</h4>
+                                        <p class="challenge-description">Reports lacked clarity and structure, making it tough for sellers to use them for tax or audit purposes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Excel Report Sent to Sellers -->
+        <section class="businessobj-section mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <!-- Added fade-up animation to business model section -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Excel Report Sent to Sellers</h2>
+                        <div class="row">
+                            <div class="excel-data">
+                                <img src="assets/img/casestudy/payment-dashboard/excelf.svg" class="img-fluid" alt="business modal" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our competitive edge -->
+        <section class="businessobj-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <!-- Added fade-up animation to competitive edge title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Our Focus</h2>
+                        <div class="row how-might-we-section">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <div class="hmw-card hmw-card-pink">
+                                    <div class="hmw-icon">
+                                        <img src="assets/img/casestudy/payment-dashboard/verify.svg" class="img-fluid" alt="verify"/>
+                                    </div>
+                                    <h4 class="hmw-question">How might we make payment reconciliation faster, transparent, and self-serve for sellers?</h4>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="hmw-card hmw-card-green">
+                                    <div class="hmw-icon">
+                                        <img src="assets/img/casestudy/payment-dashboard/tick.svg" class="img-fluid" alt="tick"/>
+                                    </div>
+                                    <h4 class="hmw-question">How might we turn payout tracking into a trust-building experience instead of a transactional one?</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Placeholder -->
+       <section class="section-spacing mt-120 mb-120 mbl-60 mtl-60 payment-vdeo">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Added slide-up animation to video placeholder -->
+                        <div class="video-placeholder position-relative" data-aos="slide-up" data-aos-duration="600">
+                            <video id="kisanVideo" class="w-100" loop playsinline preload="metadata"
+                                    poster="assets/img/casestudy/payment-dashboard/payment-poster.jpeg">
+                                <source src="assets/img/casestudy/payment-dashboard/SellerFirst.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <!-- Play button overlay -->
+                            <button id="playBtn" class="play-button" aria-label="Play video">
+                                <img src="assets/img/play-button.png" class="img-fluid" alt="play button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Usability Testing -->
+        <section class="mb-120 businessobj-section mbl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to GTM strategy title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center mb-4" data-aos="slide-up" data-aos-duration="600">Insights Usability Testing</h2>
+                        <p class="clr-gray1 fw-400 font-16 text-center mb-52" data-aos="slide-up" data-aos-duration="600">We ran a few usability tests (moderated G-meet), with a figma prototype</p>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <img src="assets/img/casestudy/payment-dashboard/testing-img1.svg" class="img-fluid" alt="img1"/>
+                                </div>
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Quick Adoption</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Sellers welcomed the solution and found the interface intuitive, though some initial guidance was needed.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Clarity & Usability</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Detailed payout views and filters improved query resolution, but some users found the filters overwhelming and needed support.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Reporting & Flexibility</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Asynchronous report generation for large datasets was praised for smoother access to financial data for audits and tax filing.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-left animations to right column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <img src="assets/img/casestudy/payment-dashboard/testing-img2.svg" class="img-fluid" alt="img2"/>
+                                </div>
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Time Savings Real</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Real-time access replaced manual reconciliation processes, cutting time from 8–10 days to minutes.</p>
+                                </div>
+
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Trust & Transparancy</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Clear deduction breakdowns and tax instructions boosted confidence, though simpler tax explanations were requested.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Impact -->
+        <section class="pt-80 pb-80 businessobj-section metrix-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Added fade-up animation to metrics title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">The Impact</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added flip-up animations to metric cards -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/payment-dashboard/efficiency.svg" alt="efficiency" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">80% Reduced</h4>
+                                    <p class="clr-gray1 fw-400 font-16 text-center">Time to Reconcile Reduced</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/payment-dashboard/reduced-rates.svg" alt="reduced-rates" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">95% Reduced</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0 text-center">Seller Queries Related to Payment</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/payment-dashboard/efficiency1.svg" alt="efficiency" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">5X Improved</h4>
+                                    <p class="clr-gray1 fw-400 font-16 text-center">Boosted Operational Efficiency</p>
+                                </div>
+
+                                <div class="mb-0" data-aos="slide-up" data-aos-delay="400" data-aos-duration="600">
+                                    <div class="mb-3">
+                                        <div class="text-center">
+                                            <img src="assets/img/casestudy/payment-dashboard/Payment.svg" alt="payment" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <h4 class="clr-black1 fw-500 font-20 text-center">98% On-time Payout</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0 text-center">Payouts completed on promised date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="mt-120 mb-120 businessobj-section mbl-60 mtl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to strategic takeaways title -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">Key Takeaways</h2>
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <!-- Added slide-right animations to left column items -->
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="100" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">User-Centered Approach</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Field research and usability testing revealed pain points, ensuring solutions fit real workflows and business goals.</p>
+                                </div>
+
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="300" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Automation & Efficiency</h4>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Automated reconciliation, reducing manual effort and cutting processing time from 8–10 days to real-time.</p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Simplified Complex Data</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Introduced multi-level payout views with contextual details, reducing confusion and improving clarity.</p>
+                                </div>
+                                <div class="mb-5" data-aos="slide-up" data-aos-delay="200" data-aos-duration="600">
+                                    <h4 class="clr-black1 fw-500 font-20">Real-Time Insights</h4>
+                                    <p class="clr-gray1 fw-400 font-16">Delivered live account visibility, increasing seller trust and reducing escalations, despite regional network challenges.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Team -->
+        <section class="mb-120 businessobj-section mbl-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to team section -->
+                        <h2 class="font-24 fw-600 clr-black2 text-center" data-aos="slide-up" data-aos-duration="600">The Team</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="teamcot text-center">
+                                    <h5 class="clr-black1 fw-500 font-20">Thiyagu Vairakkannu</h5>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Lead Product Designer</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="teamcot text-center">
+                                    <h5 class="clr-black1 fw-500 font-20">Nipun Sharma</h5>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">UX Researcher</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="teamcot text-center">
+                                    <h5 class="clr-black1 fw-500 font-20">Samina Ali</h5>
+                                    <p class="clr-gray1 fw-400 font-16 mb-0">Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- prev next -->
+        <section class="mb-120 mbl-60 prevnxt-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Added fade-up animation to navigation links -->
+                        <div class="d-flex justify-content-between align-items-center" data-aos="slide-up" data-aos-duration="600">
+                            <a href="prime-membership.html" class="nav-prev clr-black1 text-decoration-none font-36">Previous</a>
+                            <a href="kisan-shop.html" class="nav-next clr-black1 text-decoration-none font-36 font-400">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (same as your existing footer) -->
+        <footer class="footer-section">
+            <div class="container text-center">
+                <h2 class="footer-title mb-4">Let's Connect</h2>
+                <p class="footer-subtitle mb-2">Hit me up for collaborations or just a friendly hello</p>
+                <a href="mailto:thiyagu.vairakkannu@gmail.com" class="footer-email">thiyagu.vairakkannu@gmail.com</a>
+                <div class="social-links mt-40">
+                    <a href="https://www.linkedin.com/in/thiyaguvairakkannu/" class="social-link me-4"><img src="assets/img/linkedin.svg" class="img-fluid" alt="linkedin"/></a>
+                    <a href="https://www.instagram.com/pudhupuyal/" class="social-link me-4"><img src="assets/img/instagram.svg" class="img-fluid" alt="instagram"/></a>
+                    <a href="https://x.com/pudhupuyal" class="social-link"><img src="assets/img/twitter.svg" class="img-fluid" alt="twitter"/></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Back to Top Button -->
+        <button id="backToTop" title="Go to top"><span style="vertical-align: text-bottom;"><i class="fa fa-angle-up" aria-hidden="true"></i></span></button>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <!-- Added AOS JavaScript library for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Added custom animation initialization script -->
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover animations to case study buttons
+        document.querySelectorAll('.case-study-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add floating animation to hero icon
+        const heroIcon = document.querySelector('.hero-icon img');
+        if (heroIcon) {
+            setInterval(() => {
+                heroIcon.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    heroIcon.style.transform = 'translateY(0)';
+                }, 1000);
+            }, 2000);
+            heroIcon.style.transition = 'transform 1s ease-in-out';
+        }
+    </script>
+    <script>
+    // Get the button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show button after scrolling down 100px
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+    </body>
+</html>
