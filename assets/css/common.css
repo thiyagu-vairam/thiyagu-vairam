@@ -1,0 +1,110 @@
+.font-albertsans {
+    font-family: 'Albert Sans', sans-serif;
+}
+.font-56 {
+    font-size: 56px;
+    line-height: 73px;
+}
+.font-48 {
+    font-size: 48px;
+    line-height: 56px;
+}
+.font-36 {
+    font-size: 36px;
+    line-height: 26px;
+}
+.font-20 {
+    font-size: 20px;
+    line-height: 24px;
+}
+.font-16 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.clr-black {
+    color: #000000;
+}
+.clr-black1 {
+    color: #333333;
+}
+.clr-black2 {
+    color: #141415;
+}
+.clr-black3 {
+    color: #40445A;
+}
+.clr-black4 {
+    color: #1A1A1A;
+}
+.clr-blue {
+    color: #2F80ED;
+}
+.clr-gray {
+    color: #4C4D4C;
+}
+.clr-gray1 {
+    color: #4F4F4F;
+}
+.clr-gray2 {
+    color: #828282;
+}
+.clr-gray3 {
+    color: #818180;
+}
+.rounded-16 {
+    border-radius: 16px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mt-24 {
+    margin-top: 24px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}
+.mb-95 {
+    margin-bottom: 95px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-120 {
+    margin-top: 120px;
+}
+.mb-120 {
+    margin-bottom: 120px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.pt-80 {
+    padding-top: 80px;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+.pr-100 {
+    padding-right: 100px;
+}
+.mb-52 {
+    margin-bottom: 52px;
+}

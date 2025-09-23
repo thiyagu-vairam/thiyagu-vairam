@@ -1,0 +1,116 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .case-title {
+    font-size: 2rem;
+  }
+  .case-stats {
+    flex-direction: column;
+    gap: 1.5rem !important;
+  }
+  .case-study-card {
+    padding: 2rem 1.5rem;
+  }
+  /*home*/
+  section.hero-section {
+    margin-top: 0px !important;
+  }
+  .hero-icon {
+      margin-bottom: 20px;
+  }
+  .hero-icon img {
+      width: 66px;
+      height: 66px;
+  }
+  h1.hero-title {
+      font-size: 46px;
+      line-height: 58px;
+  }
+  p.hero-subtitle br {
+      display: none;
+  }
+  .contact-info {
+      border: none;
+      padding: 0;
+  }
+  a.contact-link {
+      margin-right: 0px !important;
+  }
+  .contact-info span.align-text-bottom {
+      display: none;
+  }
+  p.hero-subtitle {
+      margin-bottom: 30px;
+  }
+  section.hero-section, .company-logo, .abt-section, .philosophy-section, .otherint-section, .cmplogo-section {
+      margin-bottom: 50px;
+  }
+  .case-content {
+      padding: 0px 0px 60px 0px;
+  }
+  .case-study-card.kisan-shop {
+      padding-bottom: 0px;
+  }
+  footer.footer-section {
+      margin-top: 35px;
+  }
+  /*about*/
+  .abt-section h1, .philosophy-section h2 {
+    line-height: 45px;
+  }
+  .mbl-lh {
+    line-height: 30px;
+  }
+  .experience-section {
+    margin-bottom: 10px !important;
+  }
+  /*kison shop*/
+  section.case-study-hero {
+    margin-top: 60px;
+    padding-bottom: 50px;
+    }
+    section.case-study-hero h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    section.case-study-hero p {
+        margin-bottom: 50px;
+    }
+    .abtprt-section {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .mblabt {
+        margin-top: 20px;
+    }
+    .mbl-60 {
+        margin-bottom: 60px;
+    }
+    .mtl-60 {
+        margin-top: 60px;
+    }
+    .prevnxt-section a {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .mpr-0 {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-link {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,216 @@
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Black.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Black.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Black.woff2') format('woff2'),
+       url('AlbertSans-Black.woff') format('woff'),
+       url('AlbertSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-BlackItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-BlackItalic.woff2') format('woff2'),
+       url('AlbertSans-BlackItalic.woff') format('woff'),
+       url('AlbertSans-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Bold.woff2') format('woff2'),
+       url('AlbertSans-Bold.woff') format('woff'),
+       url('AlbertSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-BoldItalic.woff2') format('woff2'),
+       url('AlbertSans-BoldItalic.woff') format('woff'),
+       url('AlbertSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-ExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-ExtraBold.woff2') format('woff2'),
+       url('AlbertSans-ExtraBold.woff') format('woff'),
+       url('AlbertSans-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-ExtraBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-ExtraBoldItalic.woff2') format('woff2'),
+       url('AlbertSans-ExtraBoldItalic.woff') format('woff'),
+       url('AlbertSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-ExtraLight.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-ExtraLight.woff2') format('woff2'),
+       url('AlbertSans-ExtraLight.woff') format('woff'),
+       url('AlbertSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-ExtraLightItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-ExtraLightItalic.woff2') format('woff2'),
+       url('AlbertSans-ExtraLightItalic.woff') format('woff'),
+       url('AlbertSans-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Italic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Italic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Italic.woff2') format('woff2'),
+       url('AlbertSans-Italic.woff') format('woff'),
+       url('AlbertSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Light.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Light.woff2') format('woff2'),
+       url('AlbertSans-Light.woff') format('woff'),
+       url('AlbertSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-LightItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-LightItalic.woff2') format('woff2'),
+       url('AlbertSans-LightItalic.woff') format('woff'),
+       url('AlbertSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Medium.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Medium.woff2') format('woff2'),
+       url('AlbertSans-Medium.woff') format('woff'),
+       url('AlbertSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-MediumItalic.woff2') format('woff2'),
+       url('AlbertSans-MediumItalic.woff') format('woff'),
+       url('AlbertSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Regular.woff2') format('woff2'),
+       url('AlbertSans-Regular.woff') format('woff'),
+       url('AlbertSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-SemiBold.woff2') format('woff2'),
+       url('AlbertSans-SemiBold.woff') format('woff'),
+       url('AlbertSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-SemiBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-SemiBoldItalic.woff2') format('woff2'),
+       url('AlbertSans-SemiBoldItalic.woff') format('woff'),
+       url('AlbertSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-Thin.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-Thin.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-Thin.woff2') format('woff2'),
+       url('AlbertSans-Thin.woff') format('woff'),
+       url('AlbertSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('AlbertSans-ThinItalic.eot'); /* IE9 Compat Modes */
+  src: url('AlbertSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+       url('AlbertSans-ThinItalic.woff2') format('woff2'),
+       url('AlbertSans-ThinItalic.woff') format('woff'),
+       url('AlbertSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
