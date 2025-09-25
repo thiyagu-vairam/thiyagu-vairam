@@ -562,17 +562,9 @@ video {
 
 /* hide the overlay button when playing */
 .play-button.hidden { display: none; }
-.kisan-vdeo {
-    background: linear-gradient(234.67deg, #E7ECFF -2%, #FEE9E3 98.79%);
-    padding: 100px;
-}
-.agripix-vdeo {
-  background: radial-gradient(106.32% 158.95% at -6.32% -4.47%, #CFECFF 0%, #FEE9E3 100%);
-  padding: 100px;
-}
-.payment-vdeo {
-  background: radial-gradient(107.92% 161.88% at -7.92% -9.13%, #FEE9E3 0%, #CFECFF 100%);
-  padding: 100px;
+.kisan-vdeo, .agripix-vdeo, .payment-vdeo {
+    background: #FAFAFA;
+    padding: 80px;
 }
 /***** Desktop hover dropdown *****/
 @media (min-width: 992px) { /* lg breakpoint */
@@ -641,3 +633,15 @@ a.dropdown-item:hover {
       background-color: #FAFAFA;
       color: #000;
     }
+    a.resume-download {
+    background: #F2F2F2;
+    padding: 11px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    clear: both;
+    display: inline-block;
+}
+a.resume-download img {vertical-align: inherit;}
