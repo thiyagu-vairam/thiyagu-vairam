@@ -547,6 +547,7 @@ body {
   transition: background 0.2s ease, opacity 0.2s ease;
   z-index: 2;
   outline: none;
+  background: none;
 }
 .play-button:focus {
   outline: none !important;
@@ -565,6 +566,50 @@ video {
 .kisan-vdeo, .agripix-vdeo, .payment-vdeo {
     background: #FAFAFA;
     padding: 80px;
+}
+.video-placeholder {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.custom-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-placeholder:hover .custom-controls {
+  opacity: 1;
+}
+
+/* Control buttons */
+.control-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.control-btn:hover {
+  color: #00bfff;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 50%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
 }
 /***** Desktop hover dropdown *****/
 @media (min-width: 992px) { /* lg breakpoint */

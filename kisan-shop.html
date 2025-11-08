@@ -526,18 +526,44 @@
                         <h2 class="font-24 fw-600 clr-black2 text-center mb-2">Explainer Video</h2>
                         <p class="clr-gray1 fw-400 font-16 text-center mb-52">Discover How Kisan Shop Empowers Farmers and Retailers</p>
                         <!-- Added zoom-in animation to video placeholder -->
-                        <div class="video-placeholder position-relative">
-                            <video id="kisanVideo" class="w-100" loop playsinline preload="metadata"
+                        <!-- <div class="video-placeholder position-relative">
+                            <video id="kisanVideo" class="w-100" loop playsinline controls preload="metadata"
                                     poster="assets/img/casestudy/kisanshop/kisanshop-poster.jpeg">
                                 <source src="assets/img/casestudy/kisanshop/KisanShop.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
-                            </video>
+                            </video> -->
 
                             <!-- Play button overlay -->
-                            <button id="playBtn" class="play-button" aria-label="Play video">
+                            <!-- <button id="playBtn" class="play-button" aria-label="Play video">
                                 <img src="assets/img/play-button.png" class="img-fluid" alt="play button">
                             </button>
-                        </div>
+                        </div> -->
+                        <div class="video-placeholder position-relative">
+  <video 
+    id="kisanVideo" 
+    class="w-100" 
+    loop 
+    playsinline 
+    preload="metadata"
+    poster="assets/img/casestudy/kisanshop/kisanshop-poster.jpeg">
+    <source src="assets/img/casestudy/kisanshop/KisanShop.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Play button overlay -->
+  <button id="playBtn" class="play-button" aria-label="Play video">
+    <img src="assets/img/play-button.png" class="img-fluid" alt="play button">
+  </button>
+
+  <!-- Custom controls -->
+  <div class="custom-controls">
+    <button id="playPause" class="control-btn"><i class="fa fa-play"></i></button>
+    <input type="range" id="progressBar" class="progress-bar" value="0" min="0" max="100">
+    <button id="muteBtn" class="control-btn"><i class="fa fa-volume-up"></i></button>
+    <button id="fullScreen" class="control-btn"><i class="fa fa-expand"></i></button>
+  </div>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -546,42 +572,42 @@
          <section class="mb-120 mbl-60 mt-0 mtl-60 section-spacing kisan-vdeo bg-white pb-0">
             <div class="container">
                 <div class="row justify-content-center mb-80 mbl-60">
-                    <div class="col-lg-12">
+                    <div class="col-lg-8">
                         <h2 class="font-24 fw-600 clr-black2 text-center mb-2">FarmerJourney - Product Purchase</h2>
                         <p class="clr-gray1 fw-400 font-16 text-center mb-40">Farmer explores the feature and purchases products easily.</p>
                         <!-- Added zoom-in animation to video placeholder -->
                         <div class="row">
-                            <img src="assets/img/casestudy/kisanshop/farmer-journey.webp" class="img-fluid" alt="business modal">
+                            <img src="assets/img/casestudy/kisanshop/fj-img1.webp" class="img-fluid" alt="business modal">
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center mb-80 mbl-60">
-                    <div class="col-lg-12">
+                    <div class="col-lg-8">
                         <h2 class="font-24 fw-600 clr-black2 text-center mb-2">Retailer Journey - Store Setup</h2>
                         <p class="clr-gray1 fw-400 font-16 text-center mb-40">Retailer sets up the store by creating a catalogue and defining pricing.</p>
                         <!-- Added zoom-in animation to video placeholder -->
                         <div class="row">
-                            <img src="assets/img/casestudy/kisanshop/retailer-journey.webp" class="img-fluid" alt="business modal">
+                            <img src="assets/img/casestudy/kisanshop/fj-img2.webp" class="img-fluid" alt="business modal">
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center mb-80 mbl-60">
-                    <div class="col-lg-12">
+                    <div class="col-lg-8">
                         <h2 class="font-24 fw-600 clr-black2 text-center mb-2">Retailer Journey – Order Processing</h2>
                         <p class="clr-gray1 fw-400 font-16 text-center mb-40">Retailer confirms the order and prepares it for dispatch.</p>
                         <!-- Added zoom-in animation to video placeholder -->
                         <div class="row">
-                            <img src="assets/img/casestudy/kisanshop/order-processing.webp" class="img-fluid" alt="business modal">
+                            <img src="assets/img/casestudy/kisanshop/fj-img3.webp" class="img-fluid" alt="business modal">
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-12">
+                    <div class="col-lg-8">
                         <h2 class="font-24 fw-600 clr-black2 text-center mb-2">Delivery Partner Journey</h2>
                         <p class="clr-gray1 fw-400 font-16 text-center mb-40">Delivery partner picks up the product from the retailer and delivers it securely to the farmer.</p>
                         <!-- Added zoom-in animation to video placeholder -->
                         <div class="row">
-                            <img src="assets/img/casestudy/kisanshop/delivery-partner.webp" class="img-fluid" alt="business modal">
+                            <img src="assets/img/casestudy/kisanshop/fg-img4.webp" class="img-fluid" alt="business modal">
                         </div>
                     </div>
                 </div>

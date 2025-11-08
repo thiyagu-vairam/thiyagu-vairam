@@ -35,25 +35,88 @@ window.addEventListener("scroll", function () {
   });
 
 /*video*/
-  (function(){
-    const video = document.getElementById('kisanVideo');
-    const playBtn = document.getElementById('playBtn');
+  // (function(){
+  //   const video = document.getElementById('kisanVideo');
+  //   const playBtn = document.getElementById('playBtn');
 
-    // toggle play/pause
-    function togglePlay() {
-      if (video.paused) {
-        const p = video.play();
-        if (p !== undefined) {
-          p.then(() => {
-            // played successfully
-          }).catch(err => {
-            console.warn('Autoplay/play prevented:', err);
-          });
-        }
-      } else {
-        video.pause();
-      }
+  //   // toggle play/pause
+  //   function togglePlay() {
+  //     if (video.paused) {
+  //       const p = video.play();
+  //       if (p !== undefined) {
+  //         p.then(() => {
+  //           // played successfully
+  //         }).catch(err => {
+  //           console.warn('Autoplay/play prevented:', err);
+  //         });
+  //       }
+  //     } else {
+  //       video.pause();
+  //     }
+  //   }
+  (function(){
+  const video = document.getElementById('kisanVideo');
+  const playOverlay = document.getElementById('playBtn');
+  const playPause = document.getElementById('playPause');
+  const progressBar = document.getElementById('progressBar');
+  const muteBtn = document.getElementById('muteBtn');
+  const fullScreen = document.getElementById('fullScreen');
+
+  // Play overlay click
+  playOverlay.addEventListener('click', () => {
+    video.play();
+    playOverlay.style.display = 'none';
+    playPause.innerHTML = '<i class="fa fa-pause"></i>';
+  });
+
+  // Toggle play/pause
+  playPause.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      playPause.innerHTML = '<i class="fa fa-pause"></i>';
+      playOverlay.style.display = 'none';
+    } else {
+      video.pause();
+      playPause.innerHTML = '<i class="fa fa-play"></i>';
+      playOverlay.style.display = 'block';
     }
+  });
+
+  // Update progress bar as video plays
+  video.addEventListener('timeupdate', () => {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.value = percent;
+  });
+
+  // Seek video when user moves progress bar
+  progressBar.addEventListener('input', () => {
+    const seekTime = (progressBar.value / 100) * video.duration;
+    video.currentTime = seekTime;
+  });
+
+  // Mute/unmute
+  muteBtn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteBtn.innerHTML = video.muted ? '<i class="fa fa-volume-mute"></i>' : '<i class="fa fa-volume-up"></i>';
+  });
+
+  // Fullscreen toggle
+  fullScreen.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      video.requestFullscreen();
+      fullScreen.innerHTML = '<i class="fa fa-compress"></i>';
+    } else {
+      document.exitFullscreen();
+      fullScreen.innerHTML = '<i class="fa fa-expand"></i>';
+    }
+  });
+
+  // Reset play button when ended
+  video.addEventListener('ended', () => {
+    playPause.innerHTML = '<i class="fa fa-play"></i>';
+    playOverlay.style.display = 'block';
+  });
+
 
     // update overlay visibility based on video state
     function updateButton() {
